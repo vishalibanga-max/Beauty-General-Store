@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty General Store</title>
+    <!-- Icons Library -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.88);
+            padding: 40px 25px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+            border: 2px solid #d4af37;
+            width: 95%;
+            max-width: 480px;
+        }
+
+        h1 { color: #d4af37; font-size: 2.2rem; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px; }
+
+        .button-group { display: flex; flex-direction: column; gap: 12px; }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            color: white !important;
+        }
+
+        /* Call Buttons - Professional Blue */
+        .call-btn { background-color: #1a73e8; }
+        
+        /* WhatsApp Buttons - WhatsApp Green */
+        .wa-btn { background-color: #25d366; }
+
+        /* Map Button - Gold/Yellow */
+        .map-btn { background-color: #f4c430; color: #000 !important; }
+
+        .btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+        i { font-size: 1.4rem; width: 25px; }
+
+        .divider { border-bottom: 1px solid #444; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Beauty General Store</h1>
+        
+        <div class="button-group">
+            <!-- Contact 1 -->
+            <a href="tel:988614009" class="btn call-btn">
+                <i class="fas fa-phone-alt"></i> Call: 98861 4009
+            </a>
+            <a href="https://wa.me" target="_blank" class="btn wa-btn">
+                <i class="fab fa-whatsapp"></i> Chat with 9888614009
+            </a>
+
+            <div class="divider"></div>
+
+            <!-- Contact 2 -->
+            <a href="tel:9888219738" class="btn call-btn">
+                <i class="fas fa-phone-alt"></i> Call: 98882 19738
+            </a>
+            <a href="https://wa.me" target="_blank" class="btn wa-btn">
+                <i class="fab fa-whatsapp"></i> Chat with 9888219738
+            </a>
+
+            <div class="divider"></div>
+
+            <!-- Map Location -->
+            <a href="https://google.com" target="_blank" class="btn map-btn">
+                <i class="fas fa-map-marker-alt"></i> VISIT HERE
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
